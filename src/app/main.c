@@ -64,6 +64,7 @@ int run_app(app_context_t *context) {
             &osession->session_guid);
         break;
       case CMD_REJECT_SESSION:
+        app_reject_chat(context);
         break;
       case CMD_SESSION:
         if (!param) {
